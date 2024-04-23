@@ -13,4 +13,6 @@ There is a button at the left top which explain what the game is and what the ga
 
 Timer is at the right top which counts the time of player solving the puzzle. You can reset it and pause it.
 
+New puzzle will help you generate a new game board.
+
 
