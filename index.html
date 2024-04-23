@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="menu-bar">Sudoku</div>
+    <div id="game-container">
+      <div id="toast-container"></div>
+      <div id="timer">00:00</div>
+      <button id="pause-button" onclick="togglePause()">Pause</button>
+      <button id="reset-button" onclick="toggleReset()">Reset</button>
+      <button id="what-is-sudoku-btn">WHAT IS SUDOKU?</button>
+      <div id="sudoku-dialog" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>WHAT IS SUDOKU?</h2>
+          <p>
+            Sudoku, (originally called Number Place) is a logic-based,
+            combinatorial number-placement puzzle. <br />
+            <br />
+            In classic Sudoku, the objective is to fill a 9 × 9 grid with digits
+            so that each column, each row, and each of the nine 3 × 3 subgrids
+            that compose the grid (also called "boxes", "blocks", or "regions")
+            contains all of the digits from 1 to 9.
+          </p>
+        </div>
+      </div>
+
+      <div id="sudoku-board">
+        <!-- Sudoku grid will be dynamically created here -->
+      </div>
+      <div class="game-controls">
+        <button onclick="clearSelection()">Clear</button>
+        <!-- Number buttons will be added here dynamically -->
+      </div>
+      <button onclick="generateNewPuzzle()" class="new-puzzle-button">
+        New Puzzle
+      </button>
+      <div id="win-message" style="display: none">
+        Congratulations, you solved the puzzle! Start a new puzzle.
+      </div>
+    </div>
+
+    <div id="game-description">
+      <p>
+        Enjoy a classic game of Sudoku right here! <br />
+        Challenge yourself with new puzzles, and track your time.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
